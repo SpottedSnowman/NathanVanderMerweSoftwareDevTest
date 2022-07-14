@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Volkswagen Vechile App</title>
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
+
+</head>
+<body>
+
+    <div class="container">
+
+
+
+        <!--Filter Section-->
+
+        <aside class="app-filters">
+
+            <div class="display-web">
+
+                <br />
+                <img id="banner-logo" src="images/Logo.png"/>
+
+                <br />
+                <h1>Filters</h1>
+                <br />
+                <!--Body Type Selection-->
+                <hr />
+                <button class="collapseable-filter">Body Type</button>
+                <div class="content">
+                    <label for="hatch"><input type="checkbox" id="hatch" value="Hatch" />Hatch</label>
+                    <br />
+                    <label for="sedan"><input type="checkbox" id="sedan" value="Sedan" />Sedan</label>
+                    <br />
+                    <label for="suv"><input type="checkbox" id="suv" value="Suv" />SUV</label>
+                    <br />
+                    <label for="bakkie"> <input type="checkbox" id="bakkie" value="Bakkie" />Bakkie</label>
+                    <br />
+                    <br />
+                </div>
+
+                <hr />
+
+                <!--Engine Type Selection-->
+                <button class="collapseable-filter">Engine Type</button>
+                <div class="content">
+                    <label class="filter-checkbox-label" for="no-selection"><input type="checkbox" id="no-selection" value="no-selection" />-</label>
+                    <br />
+                    <label class="filter-checkbox-label" for="petrol"><input type="checkbox" id="petrol" value="Petrol" />Petrol</label>
+                    <br />
+                    <label class="filter-checkbox-label" for="diesel"><input type="checkbox" id="diesel" value="Diesel" />Diesel</label>
+                    <br />
+                    <br />
+                </div>
+
+                <hr />
+
+                <!--Gear Type Selection-->
+                <button class="collapseable-filter">Gear Type</button>
+                <div class="content">
+                    <label for="Hatch"><input type="checkbox" id="manual" value="Manual" /> Manual</label>
+                    <br />
+                    <label for="Automatic"><input type="checkbox" id="" value="Sedan" /> Automatic</label>
+                    <br />
+                    <br />
+                </div>
+
+                <hr />
+
+                <!--Price Filter Section-->
+                <button class="collapseable-filter">Price Range</button>
+                <div class="content">
+                    <label for="price-min">Price:</label>
+                    <input type="range" name="price-min" id="price-min" value="200" min="0" max="2000000">
+                    <br />
+                    <br />
+                </div>
+
+                <hr />
+
+                <!--Features Section-->
+                <button class="collapseable-filter">Features</button>
+                <div class="content">
+
+                    <label for="alloys-wheels"><input type="checkbox" id="alloy-wheels" value="Alloy Wheels" />Alloys Wheels</label>
+                    <br />
+                    <label for="led-headlamps"><input type="checkbox" id="led-headlamps" value="Led Headlamps" />Led Headlamps</label>
+                    <br />
+                    <label for="cruise-control"><input type="checkbox" id="cruise-control" value="Cruise Control" />Cruise Control</label>
+                    <br />
+                    <label for="composition-media-radio"> <input type="checkbox" id="composition-media-radio" value="Composition Media Radio" />Composition Media Radio</label>
+                    <br />
+                    <label for="esc"><input type="checkbox" id="esc" value="Electronic stability control" />Electronic Stability Control</label>
+                    <br />
+                    <label for="m-fsw"><input type="checkbox" id="m-fsw" value="Multi-function steering wheel" />Multi-Function Steering Wheel</label>
+                    <br />
+                    <label for="mqb-radio"><input type="checkbox" id="mqb-radio" value="MQB radio" />MQB radio</label>
+                    <br />
+                    <label for="chrome-package"><input type="checkbox" id="chrome-package" value="Chrome Package" />Chrome Package</label>
+                    <br />
+                    <label for="trailer-hitch"><input type="checkbox" id="trailer-hitch" value="Trailer Hitch" />Trailer Hitch</label>
+                    <br />
+                    <br />
+                </div>
+            </div>
+
+            <!--Mobile Version-->
+
+            <div id="mobile-banner">
+                <h1>Vechile List</h1>
+            </div>
+
+            <div class="display-mobile">
+                <div>
+                    <img id="banner-logo" src="images/Logo.png" />
+                    <button class="collapseable-filter">Filters</button>
+                    <div class="content">
+                        <label for="hatch"><input type="checkbox" id="hatch" value="Hatch" />Hatch</label>
+                        <br />
+                        <label for="sedan"><input type="checkbox" id="sedan" value="Sedan" />Sedan</label>
+                        <br />
+                        <label for="suv"><input type="checkbox" id="suv" value="Suv" />SUV</label>
+                        <br />
+                        <label for="bakkie"> <input type="checkbox" id="bakkie" value="Bakkie" />Bakkie</label>
+                        <br />
+                        <br />
+                        <hr />
+                        <label class="filter-checkbox-label" for="no-selection"><input type="checkbox" id="no-selection" value="no-selection" />-</label>
+                        <br />
+                        <label class="filter-checkbox-label" for="petrol"><input type="checkbox" id="petrol" value="Petrol" />Petrol</label>
+                        <br />
+                        <label class="filter-checkbox-label" for="diesel"><input type="checkbox" id="diesel" value="Diesel" />Diesel</label>
+                        <br />
+                        <br />
+                        <hr />
+                        <label for="Hatch"><input type="checkbox" id="manual" value="Manual" /> Manual</label>
+                        <br />
+                        <label for="Automatic"><input type="checkbox" id="" value="Sedan" /> Automatic</label>
+                        <br />
+                        <br />
+                        <hr />
+                        <label for="price-min">Price:</label>
+                        <input type="range" name="price-min" id="price-min" value="200" min="0" max="2000000">
+                        <br />
+                        <br />
+                        <hr />
+                        <label for="alloys-wheels"><input type="checkbox" id="alloy-wheels" value="Alloy Wheels" />Alloys Wheels</label>
+                        <br />
+                        <label for="led-headlamps"><input type="checkbox" id="led-headlamps" value="Led Headlamps" />Led Headlamps</label>
+                        <br />
+                        <label for="cruise-control"><input type="checkbox" id="cruise-control" value="Cruise Control" />Cruise Control</label>
+                        <br />
+                        <label for="composition-media-radio"> <input type="checkbox" id="composition-media-radio" value="Composition Media Radio" />Composition Media Radio</label>
+                        <br />
+                        <label for="esc"><input type="checkbox" id="esc" value="Electronic stability control" />Electronic Stability Control</label>
+                        <br />
+                        <label for="m-fsw"><input type="checkbox" id="m-fsw" value="Multi-function steering wheel" />Multi-Function Steering Wheel</label>
+                        <br />
+                        <label for="mqb-radio"><input type="checkbox" id="mqb-radio" value="MQB radio" />MQB radio</label>
+                        <br />
+                        <label for="chrome-package"><input type="checkbox" id="chrome-package" value="Chrome Package" />Chrome Package</label>
+                        <br />
+                        <label for="trailer-hitch"><input type="checkbox" id="trailer-hitch" value="Trailer Hitch" />Trailer Hitch</label>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!--Main Content Start-->
+        <section id="desktop-banner">
+            <h1 id="banner-heading">
+                Vechile List
+            </h1>
+        </section>
+        <main class="vechile-display">
+            <div class="spacer-25"></div>
+            <div class="display-btns">
+                <input id="searchbar" type="text" placeholder="Search..">
+                <input id="csv-btn" type="button" value="Download CSV" />
+            </div>
+
+            <div class="spacer-25"></div>
+
+            <div class="flex-container">
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <h1 id="car-name">Polo</h1>
+                    <p id="car-features">Meh</p>
+                    <p id="car-price">200000</p>
+                    <p id="car-stock">52</p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">Polo 2</h1>
+                    <p id="car-features">Meh</p>
+                    <p id="car-price">25</p>
+                    <p id="car-stock">14</p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">Polo</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes" ;>
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">Polo</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">Polo</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">Polo</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">Bakkie</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">1</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">2</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">3</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">1</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">2</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">3</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">1</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">2</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">3</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">1</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+                <div class="flex-boxes">
+                    <img id="car-img" src"" />
+                    <br />
+                    <h1 id="car-name">2</h1>
+                    <p id="car-features"></p>
+                    <p id="car-price"></p>
+                    <p id="car-stock"></p>
+                </div>
+            </div>
+            <div class="spacer-25"></div>
+        </main>
+
+        <footer class="footer-display">
+            <h6 id="footer-heading">
+                © Volkswagen 2022
+            </h6>
+        </footer>
+    </div>
+
+
+    <!--Script Linking-->
+    <script src="js/site.js"></script>
+</body>
+</html>
