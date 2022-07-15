@@ -12,5 +12,3 @@ for (i = 0; i < collapse.length; i++) {
         }
     });
 }
-
-const db = window.openDatabase()
