@@ -19,7 +19,7 @@
             <div class="display-web">
 
                 <br />
-                <img id="banner-logo" src="images/Logo.png"/>
+                <img id="banner-logo" src="images/Logo.png" />
 
                 <br />
                 <h1>Filters</h1>
@@ -35,6 +35,8 @@
                     <label for="suv"><input type="checkbox" id="suv" value="Suv" />SUV</label>
                     <br />
                     <label for="bakkie"> <input type="checkbox" id="bakkie" value="Bakkie" />Bakkie</label>
+                    <br />
+                    <label for="kombi"> <input type="checkbox" id="kombi" value="Kombi" />Kombie</label>
                     <br />
                     <br />
                 </div>
@@ -104,17 +106,24 @@
                 </div>
             </div>
 
-            <!--Mobile Version-->
+        </aside>
 
-            <div id="mobile-banner">
-                <h1>Vechile List</h1>
-            </div>
+        <!--Mobile Filter Section-->
+        <section id="mobile-banner">
+        <h1 id="banner-heading">
+            Vechile List
+        </h1>
+        </section>
+        <aside class="app-filter-mobile">
 
             <div class="display-mobile">
                 <div>
                     <img id="banner-logo" src="images/Logo.png" />
-                    <button class="collapseable-filter">Filters</button>
+                    <button class="collapseable-filter"> <span>Filters</span> </button>
+                    
                     <div class="content">
+                        <hr/>
+                        <br/>
                         <label for="hatch"><input type="checkbox" id="hatch" value="Hatch" />Hatch</label>
                         <br />
                         <label for="sedan"><input type="checkbox" id="sedan" value="Sedan" />Sedan</label>
@@ -123,8 +132,11 @@
                         <br />
                         <label for="bakkie"> <input type="checkbox" id="bakkie" value="Bakkie" />Bakkie</label>
                         <br />
+                        <label for="kombi"> <input type="checkbox" id="kombi" value="Kombi" />Kombie</label>
+                        <br />
                         <br />
                         <hr />
+                        <br/>
                         <label class="filter-checkbox-label" for="no-selection"><input type="checkbox" id="no-selection" value="no-selection" />-</label>
                         <br />
                         <label class="filter-checkbox-label" for="petrol"><input type="checkbox" id="petrol" value="Petrol" />Petrol</label>
@@ -133,17 +145,20 @@
                         <br />
                         <br />
                         <hr />
-                        <label for="Hatch"><input type="checkbox" id="manual" value="Manual" /> Manual</label>
+                        <br/>
+                        <label for="manual"><input type="checkbox" id="manual" value="Manual" /> Manual</label>
                         <br />
-                        <label for="Automatic"><input type="checkbox" id="" value="Sedan" /> Automatic</label>
+                        <label for="automatic"><input type="checkbox" id="automatic" value="Automatic" /> Automatic</label>
                         <br />
                         <br />
                         <hr />
+                        <br/>
                         <label for="price-min">Price:</label>
                         <input type="range" name="price-min" id="price-min" value="200" min="0" max="2000000">
                         <br />
                         <br />
                         <hr />
+                        <br/>
                         <label for="alloys-wheels"><input type="checkbox" id="alloy-wheels" value="Alloy Wheels" />Alloys Wheels</label>
                         <br />
                         <label for="led-headlamps"><input type="checkbox" id="led-headlamps" value="Led Headlamps" />Led Headlamps</label>
@@ -333,7 +348,11 @@
         </main>
 
         <footer class="footer-display">
-            <h6 id="footer-heading">
+            <h6 id="desktop-footer-heading">
+                © Volkswagen 2022
+            </h6>
+
+            <h6 id="mobile-footer-heading">
                 © Volkswagen 2022
             </h6>
         </footer>

@@ -39,6 +39,8 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 
 .app-filters {
+
+    display:block;
     background-color: #005bab;
     border-radius: 10px 0px 0px 0px;
     color: white;
@@ -157,12 +159,18 @@ h1, h2, h3, h4, h5, h6, p, span {
     background-position: center;
 }
 
-#footer-heading {
+#desktop-footer-heading {
+    display:block;
     display: flex;
     justify-content: center;
     padding-top: 30px;
     padding-left: 220px;
     color: #005bab;
+}
+
+#mobile-footer-heading
+{
+    display:none;
 }
 
 
@@ -238,24 +246,26 @@ h1, h2, h3, h4, h5, h6, p, span {
         border-radius: 10px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-gap: 2vh;
         width: auto;
     }
 
-    .app-filters {
-        grid-row-start: 1;
-        grid-row-end: 1;
+    .app-filter-mobile {
+        grid-row-start: 2;
+        grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 13;
-        width: 80%;
+        width:100%;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        background-color: #005bab;
+        color: white;
+        font-family: Arial;
     }
 
     .vechile-display {
-        grid-row-start: 2;
-        grid-row-end: 13;
+        grid-row-start: 3;
+        grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 13;
     }
@@ -301,16 +311,42 @@ h1, h2, h3, h4, h5, h6, p, span {
         font-size: medium;
     }
 
-    #mobile-banner {
-        display: block;
-        width: 100%;
-        background-image: url("./Images/car.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
     #desktop-banner {
         display: none;
     }
+
+    .app-filters
+    {
+        display:none;
+    }
+    #mobile-banner {
+        height: 33.2vh;
+        grid-column: 1/13;
+        grid-row: 1/1;
+        border-radius: 0px 10px 0px 0px;
+        background-image: url(../images/car.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        width: 100%;
+    }
+
+    #mobile-footer-heading {
+        display:block;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        color: #005bab;
+    }
+
+    #desktop-footer-heading
+    {
+        display:none;
+    }
+
+    
+
 }
 
